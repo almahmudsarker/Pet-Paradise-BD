@@ -44,7 +44,7 @@ const AboutUs = () => {
             className="mb-6 lg:mb-0 lg:w-1/3"
           >
             <img
-              src="/src/assets/images/rahat.jpg"
+              src="/rahat.jpg"
               alt="Owner Photo"
               className="w-full h-auto rounded-lg"
             />

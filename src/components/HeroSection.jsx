@@ -11,7 +11,7 @@ const HeroSection = () => {
         muted
       >
         <source
-          src="/src/assets/videos/pexels-maksim-goncharenok-6283472 (Original).mp4"
+          src="/pexels-maksim-goncharenok-6283472 (Original).mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.

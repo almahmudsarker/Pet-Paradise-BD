@@ -38,11 +38,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between mt-5">
           {/* Logo (Left Side) */}
           <div className="flex items-center">
-            <img
-              src="/src/assets/images/petParadise.png"
-              alt="Logo"
-              className="h-20 w-20 mr-2"
-            />
+            <img src="/petParadise.png" alt="Logo" className="h-20 w-20 mr-2" />
             <span className="text-white text-lg font-bold hover:text-[#007257]">
               {/* Pet Paradise BD */}
             </span>
@@ -59,12 +55,12 @@ const Navbar = () => {
             <a href="/contact" className="text-white hover:text-gray-300">
               Contact
             </a>
-            <a
+            {/* <a
               href="/order"
               className="bg-[#007257] text-white hover:bg-white hover:text-[#296456] px-4 py-2 rounded"
             >
               Order
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile Menu Toggle (Hidden on larger screens) */}
@@ -86,12 +82,12 @@ const Navbar = () => {
               <a href="/contact" className="block text-[#007257] py-2">
                 Contact
               </a>
-              <a
+              {/* <a
                 href="/order"
                 className="block text-[#007257] hover:text-[#296456] py-2 rounded"
               >
                 Order
-              </a>
+              </a> */}
             </div>
           )}
         </div>

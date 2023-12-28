@@ -20,7 +20,7 @@ const CompanyGoals = () => {
             className="mb-6 lg:mb-0 lg:w-1/3"
           >
             <img
-              src="/src/assets/images/petParadise.png"
+              src="/petParadise.png"
               alt="Company Logo"
               className="w-full h-auto"
             />
