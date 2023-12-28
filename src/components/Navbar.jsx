@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <img src="/petParadise.png" alt="Logo" className="h-20 w-20 mr-2" />
             <span className="text-white text-lg font-bold hover:text-[#007257]">
-              {/* Pet Paradise BD */}
+              Pet Paradise BD
             </span>
           </div>
 
