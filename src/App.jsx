@@ -4,10 +4,12 @@ import EducationalContent from "./components/EducationalContent";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import SplashScreen from "./components/splashScreen/SplashScreen";
 
 function App() {
   return (
     <>
+      <SplashScreen />
       <Navbar />
       <HeroSection />
       <CompanyGoals />

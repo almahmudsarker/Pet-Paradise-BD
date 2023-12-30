@@ -44,9 +44,9 @@ const AboutUs = () => {
             className="mb-6 lg:mb-0 lg:w-1/3"
           >
             <img
-              src="/2.png"
+              src="/pinkSuite.JPG"
               alt="Owner Photo"
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg shadow-xl"
             />
           </div>
         </div>
