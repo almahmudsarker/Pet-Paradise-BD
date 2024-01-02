@@ -63,7 +63,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container" data-aos="fade-up" data-aos-duration="1000">
+    <div className="container">
       <div id="slide">
         {items.map((item, index) => (
           <div

@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slider-body {
+    background: linear-gradient(135deg, #8bddd2 10%, #053f46 100%);
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.slider-body .clip-hidden {
+    clip-path: ellipse(0 0 at 0% 0%);
+    opacity: 0;
+}
+
+.slider-body .clip-visible {
+    clip-path: ellipse(1200px 1200px at 0% 0%);
+}
+
+.slider-body #back,
+#forward {
+    @apply absolute z-[5] -translate-y-2/4 text-[#04292ec3] hover:scale-125 cursor-pointer duration-[0.4s] ease-out px-0 py-2.5 border-0 top-2/4;
+}
+
+.slider-body .content {
+    @apply text-[#f8feff] absolute w-full z-[5] text-center backdrop-blur-[15px] duration-[1s] px-0 py-[45px] left-0 bottom-0;
+    background: linear-gradient(135deg, #88d6cca6 10%, #04292ec3 100%);
+}

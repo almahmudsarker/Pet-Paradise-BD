@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Carousel from "./components/carousel/Carousel";
+import FoodSlider from "./components/foodSlider/FoodSlider";
 import SplashScreen from "./components/splashScreen/SplashScreen";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Carousel />
       <CompanyGoals />
       <EducationalContent />
+      <FoodSlider />
       <AboutUsSection />
       <Footer />
     </>
