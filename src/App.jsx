@@ -13,10 +13,10 @@ function App() {
       <SplashScreen />
       <Navbar />
       <HeroSection />
+      <Carousel />
       <CompanyGoals />
       <EducationalContent />
       <AboutUsSection />
-      <Carousel />
       <Footer />
     </>
   );

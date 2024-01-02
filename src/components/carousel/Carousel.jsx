@@ -1,42 +1,54 @@
 import React from "react";
 import "./Carousel.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Carousel = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   const items = [
     {
       image:
-        "https://plus.unsplash.com/premium_photo-1677545182067-26ac518ef64f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
-      name: "LUNDEV",
+        "https://images.unsplash.com/photo-1460572894071-bde5697f7197?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Grouchy Persian cat",
       description:
-        "Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu",
+        "Grouchy Persian cat: Fussy fluff with a disdainful stare, demands regal treatment, disapproves playfully.",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1494256997604-768d1f608cac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
-      name: "LUNDEV",
+        "https://images.unsplash.com/photo-1480363494744-a47653fab100?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Tasty Morsel",
       description:
-        "Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu",
+        "Tasty Morsel: Delectable bite-sized delight, tempts taste buds with irresistible flavors and culinary bliss.",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
-      name: "LUNDEV",
+        "https://images.unsplash.com/photo-1503431128871-cd250803fa41?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Kylo Ren",
       description:
-        "Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu",
+        "Kylo Ren: Brooding and conflicted antagonist in the Star Wars saga, struggles with the pull of both the light and dark sides of the Force",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
-      name: "LUNDEV",
+        "https://images.unsplash.com/photo-1456796148441-485386946471?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Grey cat yawning",
       description:
-        "Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu",
+        "Yawning: Involuntary reflex indicating tiredness or boredom, often accompanied by a deep inhalation and stretching of the jaw muscles",
     },
     {
       image:
-        "https://plus.unsplash.com/premium_photo-1677101221533-52b45823a2dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0fGVufDB8fDB8fHww",
-      name: "LUNDEV",
+        "https://images.unsplash.com/photo-1541840524505-3d825592d8ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Fire-eyed cat",
       description:
-        "Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu",
+        "Fire-eyed cat: Feline with captivating azure eyes, a mesmerizing and rare trait, adding to its unique and charming appearance",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1498100152307-ce63fd6c5424?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Hunger",
+      description:
+        "Hunger: The intense, physiological drive for nourishment, triggering a range of sensations and prompting the search for satisfying sustenance",
     },
   ];
 
@@ -51,7 +63,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-up" data-aos-duration="1000">
       <div id="slide">
         {items.map((item, index) => (
           <div
@@ -62,16 +74,26 @@ const Carousel = () => {
             <div className="content">
               <div className="name">{item.name}</div>
               <div className="des">{item.description}</div>
-              <button>See more</button>
+              {/* <button>See more</button> */}
             </div>
           </div>
         ))}
       </div>
       <div className="buttons">
-        <button id="prev" onClick={handlePrevClick}>
+        <button
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          id="prev"
+          onClick={handlePrevClick}
+        >
           <i className="fa-solid fa-angle-left"></i>
         </button>
-        <button id="next" onClick={handleNextClick}>
+        <button
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          id="next"
+          onClick={handleNextClick}
+        >
           <i className="fa-solid fa-angle-right"></i>
         </button>
       </div>
