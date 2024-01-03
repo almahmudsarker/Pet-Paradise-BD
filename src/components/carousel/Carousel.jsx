@@ -63,7 +63,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container shadow-xl">
       <div id="slide">
         {items.map((item, index) => (
           <div

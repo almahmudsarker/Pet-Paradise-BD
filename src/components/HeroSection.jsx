@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[800px] lg:h-screen flex items-center overflow-x-hidden">
+    <section className="relative h-[800px] lg:h-screen flex items-center overflow-x-hidden shadow-2xl">
       {/* Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
