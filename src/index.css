@@ -29,3 +29,41 @@
     @apply text-[#f8feff] absolute w-full z-[5] text-center backdrop-blur-[15px] duration-[1s] px-0 py-[45px] left-0 bottom-0;
     background: linear-gradient(135deg, #88d6cca6 10%, #04292ec3 100%);
 }
+
+/* offer components */
+@keyframes gradientText {
+    0% {
+        color: #836249;
+    }
+
+    50% {
+        color: #cfaf97;
+    }
+
+    100% {
+        color: #523723;
+    }
+}
+
+.text-gradient {
+    animation: gradientText 3s infinite alternate;
+}
+
+/* hero components */
+@keyframes gradientText2 {
+    0% {
+        color: #ffffff7b;
+    }
+
+    50% {
+        color: #ffffff;
+    }
+
+    100% {
+        color: #007257;
+    }
+}
+
+.hero-text-gradient {
+    animation: gradientText2 3s infinite alternate;
+}

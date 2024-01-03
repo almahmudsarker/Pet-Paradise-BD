@@ -19,7 +19,7 @@ const HeroSection = () => {
       {/* Content Overlay */}
       <div className="relative z-10 text-white text-center mx-auto">
         {/* Headline */}
-        <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+        <h1 className="text-4xl lg:text-6xl font-bold mb-4 hero-text-gradient">
           The Ultimate Haven for Your Feline Friends!
         </h1>
 
