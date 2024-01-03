@@ -5,7 +5,7 @@ import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 // import backgroundImage from "../assets/images/tumblr_pcy6arSDZz1w3y4ilo1_r1_640.webp";
 // import backgroundImage from "../assets/images/tumblr_pm9b8qdYph1w3y4ilo1_640.gif";
-import backgroundImage from "../assets/images/cats/manda-hansen-p5lS8DT3tSQ-unsplash.jpg";
+import backgroundImage from "/manda-hansen-p5lS8DT3tSQ-unsplash.jpg";
 import Container from "./shared/Container";
 
 const Reviews = () => {
