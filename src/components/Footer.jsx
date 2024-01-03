@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Container from "./shared/Container";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,10 +24,16 @@ const Footer = () => {
               >
                 <FaFacebook />
               </a>
-              <a href="#" className="text-white hover:text-gray-300">
+              <a
+                href="https://twitter.com/almahmudsarker7"
+                className="text-white hover:text-gray-300"
+              >
                 <FaTwitter />
               </a>
-              <a href="#" className="text-white hover:text-gray-300">
+              <a
+                href="https://www.instagram.com/almahmudsarker7/"
+                className="text-white hover:text-gray-300"
+              >
                 <FaInstagram />
               </a>
             </div>
@@ -35,18 +42,18 @@ const Footer = () => {
           {/* Right Section - Quick Links */}
           <div className="lg:text-right">
             <nav className="flex flex-col lg:flex-row space-y-2 lg:space-x-4 lg:space-y-0">
-              <a href="#" className="text-white hover:text-gray-300">
+              <a href="/" className="text-white hover:text-gray-300">
                 Home
               </a>
-              <a href="#" className="text-white hover:text-gray-300">
+              <Link to="/products" className="text-white hover:text-gray-300">
                 Products
-              </a>
-              <a href="#" className="text-white hover:text-gray-300">
+              </Link>
+              <Link to="/about" className="text-white hover:text-gray-300">
                 About
-              </a>
-              <a href="#" className="text-white hover:text-gray-300">
+              </Link>
+              <Link to="/contact" className="text-white hover:text-gray-300">
                 Contact
-              </a>
+              </Link>
             </nav>
           </div>
         </div>

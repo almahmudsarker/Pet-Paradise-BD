@@ -23,8 +23,8 @@ function App() {
       <EducationalContent />
       <FoodSlider />
       <SpecialOffers />
-      <Reviews />
       <AboutUsSection />
+      <Reviews />
       <Footer />
     </>
   );

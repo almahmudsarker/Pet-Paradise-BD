@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "./shared/Container";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -46,21 +47,15 @@ const Navbar = () => {
 
           {/* Navigation Links (Right Side) */}
           <div className="hidden lg:flex space-x-4 items-center">
-            <a href="#products" className="text-white hover:text-gray-300">
+            <Link to="/products" className="text-white hover:text-gray-300">
               Products
-            </a>
-            <a href="/about" className="text-white hover:text-gray-300">
+            </Link>
+            <Link to="/about" className="text-white hover:text-gray-300">
               About
-            </a>
-            <a href="/contact" className="text-white hover:text-gray-300">
+            </Link>
+            <Link to="/contact" className="text-white hover:text-gray-300">
               Contact
-            </a>
-            {/* <a
-              href="/order"
-              className="bg-[#007257] text-white hover:bg-white hover:text-[#296456] px-4 py-2 rounded"
-            >
-              Order
-            </a> */}
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle (Hidden on larger screens) */}
@@ -73,21 +68,15 @@ const Navbar = () => {
           {isMobileMenuOpen && (
             <div className="lg:hidden absolute top-full right-0 w-1/2 bg-white p-5">
               {/* Mobile menu content goes here */}
-              <a href="#products" className="block text-[#007257] py-2">
+              <Link to="/products" className="block text-[#007257] py-2">
                 Products
-              </a>
-              <a href="/about" className="block text-[#007257] py-2">
+              </Link>
+              <Link to="/about" className="block text-[#007257] py-2">
                 About
-              </a>
-              <a href="/contact" className="block text-[#007257] py-2">
+              </Link>
+              <Link to="/contact" className="block text-[#007257] py-2">
                 Contact
-              </a>
-              {/* <a
-                href="/order"
-                className="block text-[#007257] hover:text-[#296456] py-2 rounded"
-              >
-                Order
-              </a> */}
+              </Link>
             </div>
           )}
         </div>

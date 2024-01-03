@@ -31,7 +31,7 @@ const HeroSection = () => {
 
         {/* CTA Button */}
         <a
-          href="#products"
+          href="/products"
           className="bg-[#007257] text-white hover:bg-white hover:text-[#296456] px-6 py-3 rounded"
         >
           Explore Our Collection
