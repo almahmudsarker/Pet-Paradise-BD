@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ParadiseBanner from "./components/ParadiseBanner";
+import Reviews from "./components/Reviews";
 import SpecialOffers from "./components/SpecialOffers";
 import Carousel from "./components/carousel/Carousel";
 import FoodSlider from "./components/foodSlider/FoodSlider";
@@ -22,6 +23,7 @@ function App() {
       <EducationalContent />
       <FoodSlider />
       <SpecialOffers />
+      <Reviews />
       <AboutUsSection />
       <Footer />
     </>
